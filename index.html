@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container" id="login-container">
+        <div class="login-form">
+            <h1>Login</h1>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <div class="landing-container" id="landing-page">
+        <div class="navbar">
+            <a href="#paris">Paris</a>
+            <a href="#tokyo">Tokyo</a>
+            <a href="#america">America</a>
+        </div>
+        <div id="paris" class="section">
+            <h2>Paris</h2>
+            <p>Description of Paris...</p>
+        </div>
+        <div id="tokyo" class="section">
+            <h2>Tokyo</h2>
+            <p>Description of Tokyo...</p>
+        </div>
+        <div id="america" class="section">
+            <h2>America</h2>
+            <p>Description of America...</p>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            document.getElementById('login-container').style.opacity = '0';
+            document.getElementById('login-container').style.display = 'none';
+            document.getElementById('landing-page').style.display = 'flex';
+            document.getElementById('landing-page').style.opacity = '1';
+        }
+    </script>
+</body>
+</html>
